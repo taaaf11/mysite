@@ -60,7 +60,7 @@ def main(page: ft.Page):
                                     [
                                         ft.TextButton(
                                             content=ft.Image(
-                                                src="assets/python-logo-only.png",
+                                                src="python-logo.png",
                                                 width=40,
                                                 height=40,
                                             ),
@@ -71,7 +71,7 @@ def main(page: ft.Page):
                                         ),
                                         ft.TextButton(
                                             content=ft.Image(
-                                                src="https://flet.dev/img/logo.svg",
+                                                src="flet-logo.svg",
                                                 width=40,
                                                 height=40,
                                             ),
@@ -82,14 +82,14 @@ def main(page: ft.Page):
                                         ),
                                         ft.TextButton(
                                             content=ft.Image(
-                                                src="md.png",
+                                                src="md-logo.png",
                                                 width=40,
                                                 height=40,
                                                 color="#ffffff",
                                             ),
                                             tooltip="Markdown",
                                             disabled=True,
-                                            # on_click=lambda _: page.launch_url("python.org")
+                                            on_click=lambda _: page.launch_url("python.org")
                                         ),
                                     ],
                                     alignment=ft.MainAxisAlignment.CENTER,
